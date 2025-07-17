@@ -3,45 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel ="stylesheet" href="styles1.css">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="styles1.css">
     <script src="script1.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>
-        Body Mass Index Calculator
-   
-    </h1>
-    
-</header>
-
-        <br>
-        <br>
-
-
-        <div id="container">
-            <h2>BMI Calculator</h2>
-            
-            <label for="weight">Weight (kg):</label>
-            <input type="number" id="weight" placeholder="Enter weight" min="0" step="0.1">
-    
-            <label for="height">Height (m):</label>
-            <input type="number" id="height" placeholder="Enter height (m)" min="0" step="0.01">
-    
-            <button onclick="calculateBMI()">Calculate BMI</button>
-    
-            <p id="result"></p> <!-- BMI result will be displayed here -->
-            
-            <p id="rate"></p>
-            <img src="bmi_img.jpg">
-        
-        </div>
-
-
-        
-        
-    
+<div class="me">
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Calculator</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
     </div>
+
+    <h1>Body Mass Index Calculator</h1>
+
+    <div class="container">
+        <h2>Check Your BMI</h2>
+
+        <label for="weight">Weight (kg):</label><br>
+        <input type="number" id="weight" placeholder="Enter your weight"><br>
+
+        <label for="height">Height (cm):</label><br>
+        <input type="number" id="height" placeholder="Enter your height"><br>
+
+        <button onclick="calculateBMI()">Calculate BMI</button>
+
+        <p id="result"></p>
+        <p id="rate"></p>
+
+      
+        <p id="aware">* This is a basic calculator. Always consult a professional for health advice.</p>
+    </div>
+</div>
 </body>
 </html>
